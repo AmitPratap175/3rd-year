@@ -1,0 +1,49 @@
+2*x
+-0.9542425094393249	1.00000000000000000	-inf
+-1.99563519459755	1.00000000000000000	-inf
+-2.9995654882259823	0.99999999999999989	-15.954589770191003
+-3.9999565683801923	1.00000000000000000	-inf
+-4.999995657033466	0.99999999999999989	-15.954589770191003
+
+
+X**9 
+-0.9542425094393249	0.10915350555969172	-2.0384125503418598
+-1.99563519459755	0.10007651551718416	-4.11625048191727
+-2.9995654882259823	0.10000075150155019	-6.124070119221493
+-3.9999565683801923	0.10000000750150019	-8.124851875691155
+-4.999995657033466	0.10000000007500136	-10.12493090576486
+
+for this method we see that the output has the last terms of column 3 as -16 which is much lower as the converge to the actual value. 
+This causes error in calculating the order of convergence so we neglect that value and get the following
+ 
+
+iter      chisq       delta/lim  lambda   a             b            
+   0 3.2682945747e+01   0.00e+00  2.29e+00    8.458116e-01  -1.620940e+00
+   1 2.4406136742e+00  -1.24e+06  2.29e-01    1.509715e+00  -1.600136e+00
+   2 1.5913902424e-03  -1.53e+08  2.29e-02    1.987201e+00  -1.699175e-01
+   3 9.6306030339e-06  -1.64e+07  2.29e-03    1.998997e+00  -1.289467e-01
+   4 9.6304823677e-06  -1.25e+00  2.29e-04    1.999000e+00  -1.289353e-01
+   * 9.6304823677e-06   2.02e-08  2.29e-03    1.999000e+00  -1.289353e-01
+   * 9.6304823677e-06   2.02e-08  2.29e-02    1.999000e+00  -1.289353e-01
+   5 9.6304823677e-06  -1.27e-08  2.29e-03    1.999000e+00  -1.289353e-01
+iter      chisq       delta/lim  lambda   a             b            
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 9.63048e-06
+rel. change during last iteration : -1.27005e-13
+
+degrees of freedom    (FIT_NDF)                        : 3
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00179169
+variance of residuals (reduced chisquare) = WSSR/ndf   : 3.21016e-06
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 1.999            +/- 0.0005612    (0.02807%)
+b               = -0.128935        +/- 0.001859     (1.442%)
+
+correlation matrix of the fit parameters:
+                a      b      
+a               1.000 
+b               0.902  1.000 
+---------------------------------------------------------------------
+a = 1.999

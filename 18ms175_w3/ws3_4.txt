@@ -1,0 +1,115 @@
+Function used f(x)=5*x**4
+For Trapezoidal
+
+iter      chisq       delta/lim  lambda   a1            b1           
+   0 8.1185409663e+01   0.00e+00  2.45e+00    1.000000e+00   1.000000e+00
+   1 8.4151185375e-01  -9.55e+06  2.45e-01    2.008650e+00   6.576598e-01
+   2 6.5012495454e-04  -1.29e+08  2.45e-02    2.007100e+00   2.478777e-01
+   3 1.1179393922e-07  -5.81e+08  2.45e-03    1.999898e+00   2.214375e-01
+   4 1.1148198564e-07  -2.80e+02  2.45e-04    1.999893e+00   2.214191e-01
+   5 1.1148198564e-07  -8.98e-08  2.45e-05    1.999893e+00   2.214191e-01
+iter      chisq       delta/lim  lambda   a1            b1           
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 1.11482e-07
+rel. change during last iteration : -8.98456e-13
+
+degrees of freedom    (FIT_NDF)                        : 3
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.000192771
+variance of residuals (reduced chisquare) = WSSR/ndf   : 3.71607e-08
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a1              = 1.99989          +/- 6.038e-05    (0.003019%)
+b1              = 0.221419         +/- 0.0002001    (0.09035%)
+
+correlation matrix of the fit parameters:
+                a1     b1     
+a1              1.000 
+b1              0.902  1.000 
+
+----------------------------------
+| a1              = 1.99989       |
+| b1              = 0.221419      |
+-----------------------------------
+
+For simpson 1/3
+---------------------------------
+for this method we see that the output has the last two terms of column 3 as -15 which is much lower as the converge to the actual value is upto the 15th 
+place of decimal. This causes error in calculating the order of convergence so we neglect those values and get the following
+ 
+
+iter      chisq       delta/lim  lambda   a2            b2           
+   0 2.2131771659e+00   0.00e+00  4.77e+00    2.952932e+00  -2.187884e+00
+   1 1.5481211472e+00  -4.30e+04  4.77e-01    3.153308e+00  -2.064643e+00
+   2 1.8253526320e-02  -8.38e+06  4.77e-02    3.910239e+00  -3.822725e-01
+   3 2.7745769241e-08  -6.58e+10  4.77e-03    3.999919e+00  -1.763044e-01
+   4 5.5760790994e-10  -4.88e+06  4.77e-04    4.000029e+00  -1.760527e-01
+   5 5.5760790589e-10  -7.25e-04  4.77e-05    4.000029e+00  -1.760527e-01
+iter      chisq       delta/lim  lambda   a2            b2           
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 5.57608e-10
+rel. change during last iteration : -7.24933e-09
+
+degrees of freedom    (FIT_NDF)                        : 1
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 2.36137e-05
+variance of residuals (reduced chisquare) = WSSR/ndf   : 5.57608e-10
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a2              = 4.00003          +/- 1.67e-05     (0.0004174%)
+b2              = -0.176053        +/- 3.607e-05    (0.02049%)
+
+correlation matrix of the fit parameters:
+                a2     b2     
+a2              1.000 
+b2              0.926  1.000
+
+----------------------------------
+| a2              = 4.00003       |
+| b2              = -0.176053     |
+-----------------------------------
+
+For Simpsons 3/8
+------------------------
+for this method we see that the output has the last two terms of column 3 as -15 which is much lower as the converge to the actual value is upto the 15th 
+place of decimal. This causes error in calculating the order of convergence so we neglect those values and get the following
+ 
+iter      chisq       delta/lim  lambda   a3            b3           
+   0 1.8120065225e+00   0.00e+00  4.81e+00    3.071552e+00  -1.611350e+00
+   1 1.3473886613e+00  -3.45e+04  4.81e-01    3.234717e+00  -1.543412e+00
+   2 3.9518601387e-02  -3.31e+06  4.81e-02    3.872244e+00  -1.195756e-01
+   3 1.6929590865e-07  -2.33e+10  4.81e-03    3.999751e+00   1.754993e-01
+   4 1.6947194505e-10  -9.98e+07  4.81e-04    4.000015e+00   1.761110e-01
+   5 1.6947187238e-10  -4.29e-02  4.81e-05    4.000015e+00   1.761110e-01
+iter      chisq       delta/lim  lambda   a3            b3           
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 1.69472e-10
+rel. change during last iteration : -4.28795e-07
+
+degrees of freedom    (FIT_NDF)                        : 1
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.30181e-05
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.69472e-10
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a3              = 4.00002          +/- 9.001e-06    (0.000225%)
+b3              = 0.176111         +/- 1.937e-05    (0.011%)
+
+correlation matrix of the fit parameters:
+                a3     b3     
+a3              1.000 
+b3              0.922  1.000
+
+----------------------------------
+| a3              = 4.00002       |
+| b3              = 0.176111      |
+-----------------------------------
+
+Explanation and Observation of the graph:
+As seen from the graph the simpsons' !/3 and 3/8 th rule both show a parallel line to each other slope. And as evident from the a values the order of error is aprrox 4 in both 
+cases and around 2 in the trapezoidal case. also the relative error for the function F(x)=5x**4 is less for simpson's 1/3 than with simpsons' 3/8 than the trapezoidal. So, the 
+relative error precedence is more in trapezoidal<simpsons' 3/8 < simpsons' 1/3 . That is to say simpsons' 1/3 converges more accurately in this case than the other two followed
+ by the simpsons' 3/8 followed by trapezoidal. 
