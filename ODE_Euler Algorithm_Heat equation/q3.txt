@@ -1,0 +1,8 @@
+The algorithm used can be written down in matrix form as:
+			u_(n)=A^n * u_(0)
+So, for U_(n) to decay to zero we need that all the eigenvalues be <1 in magnitude.
+This gives us the condition that, The algorithm is stable only for 
+			dt<dx**2/2
+here k=1 is used. and dt in (a)=0.00005 dx=0.010101010101010102, so dx**2/2=5.1015e-5=0.000051015.
+ 		we can see certainly that 0.00005<0.000051015<0.000052.
+hence, the algorithm is stable for the part (a) and unstable for part (b).
