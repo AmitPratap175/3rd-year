@@ -1,0 +1,6 @@
+The maximum error in solution using h=0.02 = 5.412409180838296e-07
+The maximum error in solution using h=0.05 = 1.8673105435351722e-05
+dividing the two we have 0.028985051252329894
+from h=0.05 if we decrease the steps to by a factor of 0.4 we have that the error decreases by a factor of 0.028985051252329894.
+log(0.028985051252329894,2.5)=-3.8644667383168536.
+so, the order of error is 3.8644 = ~4.

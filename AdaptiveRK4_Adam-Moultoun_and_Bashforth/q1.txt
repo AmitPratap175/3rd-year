@@ -1,0 +1,17 @@
+(b)for h=0.0015 the solutions plot shows that the numerical solution shows an oscillating behaviour because:
+	we can write,
+		y_i+1=y_i*(1-1000h)+h*(3000-2000exp(-t)) where t values ranging from [0,0.006]
+		exp(t)~1 and h(1000)=1.5,so we can write y_i+1=y_i(-0.5)+1.5
+			subsequently we can write y_i+1=(y_i-1(-0.5)+1.5)*(-0.5)+1.5
+					thst implies y_i+1=0.25*y_i-1+0.75
+						here the coefficient is +0.25 instead of - so there is an oscillatory behaviour as we can see.
+for h=0.0005
+we have 1000h=0.5,so,
+so we can write y_i+1=y_i(0.5)+0.5
+			subsequently we can write y_i+1=(y_i-1(0.5)+0.5)*(0.5)+0.5
+					thst implies y_i+1=0.25*y_i-1+0.75
+						here the coefficient is +always so we see no oscillatory behaviour.As the solution is increasing monotonically.
+
+(c)yj+1=(y[j]+h*(3000-2000*exp(-t[j+1])))/(1+1000*h)
+	h=0.05
+it is unconditionally stable 
